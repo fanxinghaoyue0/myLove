@@ -16,7 +16,7 @@
 					   var layer = layui.layer;
 					   layer.open({
 					   	type: 1,
-					   	title: "2020倒计时",
+					   	title: "2022倒计时",
 					   	anim: 2,
 					   	area: ['600px', '500px'],
 					   	content: $(".newYear"),
@@ -28,7 +28,7 @@
 				 
 				 var isOpen=1;
 				 var setInterval2=setInterval(function() {
-					 if(new Date().getTime()-new Date("2020/1/2 00:00:00").getTime()>0){
+					 if(new Date().getTime()-new Date("2022/1/2 00:00:00").getTime()>0){
 						 isOpen=-1;
 					 }
 					 if(isOpen==1){
@@ -38,9 +38,9 @@
 						 return;
 					 }
 					 console.log((new Date("2020/1/1 00:00:00").getTime()-new Date().getTime())/1000)
-					 $(".endSeconds").html(Math.ceil((new Date("2020/1/1 00:00:00").getTime()-new Date().getTime())/1000)+" 秒")
-					 if(new Date("2020/1/1 00:00:00").getTime()-new Date().getTime()<=0){
-						$(".endTitle1").html("2020 年");
+					 $(".endSeconds").html(Math.ceil((new Date("2022/1/1 00:00:00").getTime()-new Date().getTime())/1000)+" 秒")
+					 if(new Date("2022/1/1 00:00:00").getTime()-new Date().getTime()<=0){
+						$(".endTitle1").html("2022 年");
 					 	$(".endSeconds").html("祝你事事如意");
 						$(".endTitle2").show();
 						$(".newYear").css("background-image","url(img/gif011.gif)")
@@ -58,7 +58,7 @@
 
 				function dateDiff(nTime, sTime) {
 					if (sTime == null || sTime == "") {
-						sTime = "2019/11/24 0:0:0";
+						sTime = "2021/5/21 15:28:21";
 					}
 					let day1 = new Date(sTime).getTime();
 					let iDays = (nTime.getTime() - day1) / (1000 * 60 * 60 * 24); //天数
@@ -160,7 +160,7 @@
 		</audio>
 		<div class="newYear" style="font-size: 30px;color: #0FCECE;text-align: center;display: none">
 			<br />
-			<h2 class="endTitle1">距离2020年还剩余：</h2>
+			<h2 class="endTitle1">距离2022年还剩余：</h2>
 			<br />
 			<h1 style="font-size: 88px;color: aqua;" class="endSeconds">50秒</h1>
 			<br />
